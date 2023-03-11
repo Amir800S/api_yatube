@@ -32,7 +32,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return self.text
+        return [self.text[:30], self.pub_date, self.author, self.group]
 
 
 class Comment(models.Model):
